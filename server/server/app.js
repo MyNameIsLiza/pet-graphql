@@ -5,6 +5,14 @@ const mongoose = require("mongoose");
 const app = express();
 const PORT = 3005;
 
+const cors = require("cors");
+
+app.use(
+  cors({
+    origin: "*",
+  })
+);
+
 mongoose.connect(
   "mongodb+srv://user:user@cluster0.3e5fa.mongodb.net/graphqldb",
   {
