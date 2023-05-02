@@ -4,7 +4,7 @@ const Schema = mongoose.Schema;
 const petSchema = new Schema({
   name: String,
   img: String,
-  petCount: Number,
+  patCount: Number,
 });
 
 module.exports = mongoose.model("Pet", petSchema);
